@@ -121,7 +121,6 @@ def detect_open_vocab(image_path, class_prompts, device="cpu",
 
     print(f"[INFO] Dynamic threshold set to: {threshold:.2f}")
 
-    # Filter by threshold
     detections = [d for d in detections if d["score"] >= threshold]
 
     print(f"[INFO] Raw detections above threshold: {len(detections)}")
@@ -185,3 +184,4 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     demo(args)
+
