@@ -1,6 +1,7 @@
 # CV212-Zero-Shot-Object-Detection-Project
 #By Raghav Bhargava (2023UCA1927) and Akshansh Kumar Gautam (2023UCA1881)
-How code works
+
+How the code works?
 In function run_ocr it will first convert PIL image into an array for pytesseract and then it will get a dictonary with a list like top, width etc then it will loop with n boxes so that high confidence tokens can be appended and will be returned.
 
 In function non_max_supression, it will remove overlapping duplicate detection boxes and will keep the highest-scored box.
